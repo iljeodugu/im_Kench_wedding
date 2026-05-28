@@ -92,11 +92,16 @@
   function renderGallery() {
     const grid = $("#galleryGrid");
     if (!grid) return;
+
     grid.innerHTML = photos()
       .map(
         (item, index) => `
           <figure class="gallery-item" tabindex="0" data-photo-index="${index}">
-            <img src="${escapeHtml(item.src)}" alt="${escapeHtml(item.alt || item.title || "갤러리 사진")}" loading="lazy" />
+            <img
+              src="${escapeHtml(item.src)}"
+              alt="${escapeHtml(item.alt || item.title || "갤러리 사진")}"
+              decoding="async"
+            />
             <figcaption>
               <strong>${escapeHtml(item.title || `사진 ${index + 1}`)}</strong>
               <span>${escapeHtml(item.caption || "")}</span>
@@ -117,7 +122,7 @@
       });
     });
   }
-
+  
   function openLightbox(index) {
     const item = photos()[index];
     if (!item) return;
