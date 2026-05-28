@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f5dfb5" />
+    <meta name="description" content="장난용 모바일 청첩장 사이트" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="임석진 ♥ 탐켄치 모바일 청첩장" />
+    <meta property="og:description" content="저희, 결혼합니다!" />
+    <meta property="og:image" content="./assets/images/photo-01.png" />
+    <title>임석진 ♥ 탐켄치 모바일 청첩장</title>
+    <link rel="icon" href="./assets/favicon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./config.js"></script>
+    <script defer src="./script.js"></script>
+  </head>
+  <audio id="bgm" loop preload="auto">
+    <source src="./assets/bgm/wedding.mp3" type="audio/mpeg" />
+  </audio>
+  
+  <body>
+    <div class="petal-layer" aria-hidden="true">
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+      <span></span><span></span><span></span><span></span><span></span><span></span>
+    </div>
+
+    <header class="topbar" aria-label="상단 메뉴">
+      <a class="brand" href="#hero" data-bind="brandTitle">S ♥ T</a>
+      <nav>
+        <a href="#gallery">사진</a>
+        <a href="#story">스토리</a>
+        <a href="#location">오시는 길</a>
+        <a href="#guestbook">축하글</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="hero" class="hero section">
+        <div class="hero-card reveal">
+          <div class="hero-copy">
+            <p class="eyebrow" data-bind="heroBadge">SAVE THE DATE</p>
+            <h1 data-bind="headline">저희, 결혼합니다!</h1>
+            <p class="hero-subtitle" data-bind="subtitle">
+              평생 함께할 소중한 인연을 만나 저희 두 사람이 하나가 되려 합니다.
+            </p>
+
+            <div class="names" aria-label="커플 이름">
+              <span data-bind="leftName">임석진</span>
+              <strong>♥</strong>
+              <span data-bind="rightName">탐켄치</span>
+            </div>
+
+            <div class="date-pill">
+              <span data-bind="dateText">2027.01.09 토요일 오후 2시</span>
+            </div>
+
+            <div class="hero-actions">
+              <a class="btn primary" href="#guestbook">축하글 남기기</a>
+              <button class="btn ghost" type="button" data-action="copy-link">링크 복사</button>
+            </div>
+          </div>
+
+          <div class="hero-photo-wrap">
+            <button class="photo-control prev" type="button" data-action="prev-photo" aria-label="이전 사진">‹</button>
+            <img id="heroPhoto" class="hero-photo" src="./assets/images/photo-01.png" alt="청첩장 대표 이미지" />
+            <button class="photo-control next" type="button" data-action="next-photo" aria-label="다음 사진">›</button>
+            <div class="photo-caption">
+              <strong id="heroPhotoTitle">운명의 투샷</strong>
+              <span id="heroPhotoCaption">이 조합, 정말 귀합니다.</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section intro reveal">
+        <p class="section-kicker">Invitation</p>
+        <h2>소중한 분들을 초대합니다</h2>
+        <p data-bind="invitationMessage">
+          귀한 발걸음으로 축복해 주시면 더없는 기쁨이 되겠습니다.
+        </p>
+      </section>
+
+      <section class="section countdown reveal" aria-label="예식까지 남은 시간">
+        <p class="section-kicker">D-Day</p>
+        <h2 id="countdownTitle">그날까지</h2>
+        <div class="countdown-grid" id="countdownGrid">
+          <div><strong id="dd">0</strong><span>Days</span></div>
+          <div><strong id="hh">0</strong><span>Hours</span></div>
+          <div><strong id="mm">0</strong><span>Minutes</span></div>
+          <div><strong id="ss">0</strong><span>Seconds</span></div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <p class="section-kicker">Gallery</p>
+        <h2>사진첩</h2>
+        <p class="muted">사진은 <code>assets/images</code> 폴더에 넣고 <code>config.js</code>의 <code>photos</code> 배열에 추가하면 됩니다.</p>
+        <div id="galleryGrid" class="gallery-grid" aria-live="polite"></div>
+      </section>
+
+      <section id="story" class="section story reveal">
+        <p class="section-kicker">Love Story</p>
+        <h2>둘의 서사</h2>
+        <ol id="storyList" class="story-list"></ol>
+      </section>
+
+      <section id="location" class="section location reveal">
+        <p class="section-kicker">Location</p>
+        <h2>오시는 길</h2>
+        <div class="location-card">
+          <div>
+            <h3 data-bind="venueName">루나웨딩홀 2층 그랜드볼룸</h3>
+            <p data-bind="venueAddress">서울특별시 강남구 테헤란로 123</p>
+            <p class="muted" data-bind="venueNotice">토요일 오후 2시, 지각 시 탐켄치 궁극기 탑승 가능성이 있습니다.</p>
+          </div>
+          <div class="location-actions">
+            <button class="btn ghost" type="button" data-action="copy-address">주소 복사</button>
+            <a id="mapLink" class="btn primary" target="_blank" rel="noopener">지도 열기</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="guestbook" class="section guestbook reveal">
+        <p class="section-kicker">Guest Book</p>
+        <h2>축하 한마디</h2>
+        <form id="guestbookForm" class="guestbook-form">
+          <label>
+            이름
+            <input id="guestName" name="name" maxlength="20" placeholder="친구 이름" required />
+          </label>
+          <label>
+            메시지
+            <textarea id="guestMessage" name="message" maxlength="120" placeholder="예: 오래오래 행복하게 포식해라" required></textarea>
+          </label>
+          <button class="btn primary" type="submit">남기기</button>
+        </form>
+        <div id="guestbookList" class="guestbook-list"></div>
+      </section>
+
+    </main>
+
+    <footer class="footer">
+      <p data-bind="footerText">Made for legendary friendship. No frogs were harmed.</p>
+    </footer>
+
+    <dialog id="lightbox" class="lightbox">
+      <button class="lightbox-close" type="button" data-action="close-lightbox" aria-label="닫기">×</button>
+      <img id="lightboxImage" alt="확대 사진" />
+      <p id="lightboxCaption"></p>
+    </dialog>
+
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
