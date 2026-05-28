@@ -261,16 +261,30 @@
   }
 
   function observeReveal() {
+    const nodes = $$(".reveal");
+
+    if (!("IntersectionObserver" in window)) {
+      nodes.forEach((node) => node.classList.add("visible"));
+      return;
+    }
+
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          if (entry.isIntersecting) entry.target.classList.add("visible");
+          if (entry.isIntersecting || entry.intersectionRatio > 0) {
+            entry.target.classList.add("visible");
+            observer.unobserve(entry.target);
+          }
         });
       },
-      { threshold: 0.14 }
+      {
+        threshold: 0.01,
+        rootMargin: "120px 0px 120px 0px",
+      }
     );
-    $$(".reveal").forEach((node) => observer.observe(node));
-  }
+
+    nodes.forEach((node) => observer.observe(node));
+}
 
   function bindActions() {
     document.addEventListener("click", (event) => {
