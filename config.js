@@ -97,6 +97,36 @@ window.INVITE_CONFIG = {
       title: "레전드 가족사진",
       caption: "가족사진인데 왜 보스전 컷신 같죠?",
     },
+    {
+      src: "./assets/images/photo-11.png",
+      alt: "신랑과 탐켄치의 해변사진",
+      title: "레전드 해변사진",
+      caption: "역시 탐켄치는 물이 좋아요",
+    },
+    {
+      src: "./assets/images/photo-12.png",
+      alt: "셀카",
+      title: "셀카",
+      caption: "엌ㅋㅋㅋ 얼굴 크기 차이 ㅋㅋㅋ",
+    },
+    {
+      src: "./assets/images/photo-13.png",
+      alt: "음료",
+      title: "음료",
+      caption: "따뜻한 해변가에서 한잔 짠!",
+    },
+    {
+      src: "./assets/images/photo-14.png",
+      alt: "저녁",
+      title: "저녁",
+      caption: "신혼여행 느낌이 듬뿍나네요~",
+    },
+    {
+      src: "./assets/images/photo-15.png",
+      alt: "오토바이",
+      title: "오토바이",
+      caption: "ㅋㅋㅋㅋ 탐켄치는 어디서 타고있나요 ㅋㅋㅋ",
+    },
   ],
 
   story: [
