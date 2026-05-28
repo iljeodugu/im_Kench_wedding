@@ -35,99 +35,98 @@ window.INVITE_CONFIG = {
     // 비워두면 address로 구글 지도 검색 링크가 자동 생성됩니다.
     mapUrl: "",
   },
-
-  photos: [
+photos: [
     {
-      src: "./assets/images/photo-01.png",
+      src: "./assets/images/optimized/photo-01.webp",
       alt: "장난용 청첩장 대표 이미지",
       title: "운명의 투샷",
       caption: "이 조합, 정말 귀합니다.",
     },
     {
-      src: "./assets/images/photo-02.png",
+      src: "./assets/images/optimized/photo-02.webp",
       alt: "신랑과 탐켄치가 꽃길에서 함께 걷는 사진",
       title: "버진로드 입장",
       caption: "양가 하객 모두가 침묵한 압도적 피지컬 차이.",
     },
     {
-      src: "./assets/images/photo-03.png",
+      src: "./assets/images/optimized/photo-03.webp",
       alt: "신랑과 탐켄치가 셀카를 찍는 사진",
       title: "셀카 타임",
       caption: "이 정도면 청첩장이 아니라 증거 사진입니다.",
     },
     {
-      src: "./assets/images/photo-04.png",
+      src: "./assets/images/optimized/photo-04.webp",
       alt: "신랑이 탐켄치에게 케이크를 먹여주는 사진",
       title: "달콤한 한입",
       caption: "케이크보다 달콤하고, 궁극기보다 빠른 사랑.",
     },
     {
-      src: "./assets/images/photo-05.png",
+      src: "./assets/images/optimized/photo-05.webp",
       alt: "신랑과 탐켄치가 벤치에서 웃고 있는 사진",
       title: "평생 듀오 약속",
       caption: "이제 솔랭은 없습니다. 인생은 듀오큐입니다.",
     },
     {
-      src: "./assets/images/photo-06.png",
+      src: "./assets/images/optimized/photo-06.webp",
       alt: "신랑과 탐켄치가 반지를 들고 있는 사진",
       title: "반지 교환",
       caption: "작은 반지 하나에 담긴 거대한 혀의 맹세.",
     },
     {
-      src: "./assets/images/photo-07.png",
+      src: "./assets/images/optimized/photo-07.webp",
       alt: "신랑과 탐켄치가 하트 포즈를 하는 사진",
       title: "하트 시그널",
       caption: "하객 여러분, 지금 보시는 장면은 합성이 맞습니다. 아마도요.",
     },
     {
-      src: "./assets/images/photo-08.png",
+      src: "./assets/images/optimized/photo-08.webp",
       alt: "신랑과 탐켄치가 부케를 던지는 사진",
       title: "부케 던지는 날",
       caption: "받는 순간 다음 타깃은 당신입니다.",
     },
     {
-      src: "./assets/images/photo-09.png",
+      src: "./assets/images/optimized/photo-09.webp",
       alt: "신랑과 탐켄치가 노을길을 걷는 사진",
       title: "노을 산책",
       caption: "석양 아래, 둘은 조용히 강을 건넜습니다.",
     },
     {
-      src: "./assets/images/photo-10.png",
+      src: "./assets/images/optimized/photo-10.webp",
       alt: "신랑과 탐켄치가 어깨동무하고 웃는 사진",
       title: "레전드 가족사진",
       caption: "가족사진인데 왜 보스전 컷신 같죠?",
     },
     {
-      src: "./assets/images/photo-11.png",
+      src: "./assets/images/optimized/photo-11.webp",
       alt: "신랑과 탐켄치의 해변사진",
       title: "레전드 해변사진",
       caption: "역시 탐켄치는 물이 좋아요",
     },
     {
-      src: "./assets/images/photo-12.png",
+      src: "./assets/images/optimized/photo-12.webp",
       alt: "셀카",
       title: "셀카",
       caption: "엌ㅋㅋㅋ 얼굴 크기 차이 ㅋㅋㅋ",
     },
     {
-      src: "./assets/images/photo-13.png",
+      src: "./assets/images/optimized/photo-13.webp",
       alt: "음료",
       title: "음료",
       caption: "따뜻한 해변가에서 한잔 짠!",
     },
     {
-      src: "./assets/images/photo-14.png",
+      src: "./assets/images/optimized/photo-14.webp",
       alt: "저녁",
       title: "저녁",
       caption: "신혼여행 느낌이 듬뿍나네요~",
     },
     {
-      src: "./assets/images/photo-15.png",
+      src: "./assets/images/optimized/photo-15.webp",
       alt: "오토바이",
       title: "오토바이",
       caption: "ㅋㅋㅋㅋ 탐켄치는 어디서 타고있나요 ㅋㅋㅋ",
     },
-  ],
+],
 
   story: [
     {
